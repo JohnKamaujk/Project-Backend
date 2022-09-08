@@ -1,4 +1,5 @@
 puts "🌱 Seeding data..."
+
 # Seed your database here
 # Regimes
 Regime.create(name: "low sugar")
@@ -70,5 +71,28 @@ Dessert_Regime.create(
   dessert_id: 4,
   regime_id: 2
 )
-
-puts "✅ Done seeding!"
+Recipe.create(
+  dessert_id: 1,
+  ingredient_id: 1
+)
+Recipe.create(
+  dessert_id: 1,
+  ingredient_id: 2
+)
+Recipe.create(
+  dessert_id: 2,
+  ingredient_id: 3
+)
+Recipe.create(
+  dessert_id: 4,
+  ingredient_id: 1
+)
+Recipe.create(
+  dessert_id: 2,
+  ingredient_id: 4
+)
+Recipe.create(
+  dessert_id: 4,
+  ingredient_id: 3
+)
+puts "✅ Done seeding!!"
